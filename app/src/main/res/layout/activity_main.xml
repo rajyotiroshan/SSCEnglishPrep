@@ -5,74 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
+        android:id="@+id/first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/first">
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+        android:layout_marginTop="20dp">
+
         <TextView
-        android:layout_width="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+            style="@style/textStyle"
+            android:text="Words" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+          style="@style/textStyle"
+            android:text="phrase" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
         android:orientation="horizontal"
-        android:layout_below="@+id/first">
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+        android:layout_marginTop="20dp">
+
         <TextView
-        android:layout_width="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+            style="@style/textStyle"
+            android:text="slw" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           style="@style/textStyle"
+            android:text="ows" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/revise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="revise"
         android:layout_below="@+id/second"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="revise"
+        style="@style/textStyle"
+        android:layout_marginTop="50dp"/>
+
     <TextView
         android:id="@+id/cont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="continue"
         android:layout_below="@+id/revise"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="continue"
+        style="@style/textStyle"
+        android:layout_marginTop="50dp"/>
+
     <TextView
         android:id="@+id/copyri8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:text="copyright"
-        android:layout_alignParentBottom="true"/>
+        style="@style/textStyle"
+        android:textSize="14sp"/>
+
     <TextView
         android:id="@+id/rate_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rate us"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:text="rate us"
+        style="@style/textStyle"
+        android:textSize="14sp"/>
 
 
 </RelativeLayout>
